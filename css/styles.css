@@ -1,0 +1,915 @@
+body {
+  background-color: rgb(16, 1, 24);
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 6vh;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 150px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 6vh;
+  background-color: rgb(111, 3, 255);
+  font-family: "Lexend Deca", sans-serif;
+}
+
+main {
+  margin-top: 150px;
+}
+
+h1 {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+h2 {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: bold;
+}
+
+.navlist li {
+  list-style: none;
+}
+
+.navlist a {
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-size: 13px;
+}
+
+.navlist a:hover {
+  color: #01ff87;
+}
+
+.navlist .active {
+  color: #01ff87;
+}
+
+.name {
+  color: #07dc82;
+  font-size: 30px;
+  font-family: "Marck Script", cursive;
+}
+
+.name a {
+  text-decoration: none;
+  color: #07dc82;
+}
+
+.menuicon {
+  display: none;
+}
+
+.menuicon div {
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.navlist {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+
+.wordpress a {
+  text-decoration: none;
+}
+
+.wordpresstext img {
+  width: initial;
+  height: initial;
+  width: 400px;
+}
+
+.modalimage {
+  width: 700px;
+}
+
+.orientation {
+  height: 20px;
+  background-color: rgb(16, 1, 24);
+}
+
+.orientation a {
+  background-color: rgb(16, 1, 24);
+  color: #07dc82;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 7px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-family: "Lexend Deca", sans-serif;
+}
+.orientation p {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+  color: #07dc82;
+  background-color: rgb(16, 1, 24);
+}
+
+.fetched-image {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+}
+
+.more-link {
+  display: none;
+}
+
+/* Indexpage */
+.indexgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 100px;
+  margin-right: 100px;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-areas:
+    "index1 latestposts"
+    "index2 index2"
+    "index3 index3"
+    "index4 index4"
+    "index5 index5"
+    "index6 index6";
+}
+
+#indexdiv1 {
+  grid-area: index1;
+}
+#indexdiv2 {
+  grid-area: index2;
+}
+#indexdiv3 {
+  grid-area: index3;
+}
+#indexdiv4 {
+  grid-area: index4;
+}
+#indexdiv5 {
+  grid-area: index5;
+}
+#indexdiv6 {
+  grid-area: index6;
+}
+#indexdiv7 {
+  grid-area: index7;
+}
+
+.index-class {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.index-class p {
+  max-width: 500px;
+}
+.index-images {
+  max-width: 400px;
+  max-height: 500px;
+}
+
+#indexdiv1 {
+  flex-direction: column-reverse;
+  justify-self: left;
+  margin-top: 0px;
+  margin-bottom: 100px;
+
+}
+
+#indexdiv3 {
+  flex-direction: row-reverse;
+}
+
+#indexdiv5 {
+  flex-direction: row-reverse;
+}
+
+#indexdiv1 p {
+  padding-top: 20px;
+}
+
+.heading {
+  color: #ffffff;
+  font-size: 35px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.latestposts {
+  background-color: rgb(111, 3, 255);
+  grid-area: latestposts;
+  display: flex;
+  row-gap: 40px;
+  height: 500px;
+  margin-top: 40px;
+  margin-bottom: 100px;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-between;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.indexbuttons {
+  border: 2px solid #ffffff;
+  border-radius: 1.5rem;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.indexbuttons:hover {
+  color: rgb(111, 3, 255);
+  background-color: #ffffff;
+}
+
+.wordpress p {
+  color: #ffffff;
+  padding: 6px;
+}
+
+.wordpress p:hover {
+  color: rgb(111, 3, 255);
+  background-color: #ffffff;
+  border-radius: 1.5rem;
+}
+
+.latestposts h2 {
+  padding-top: 40px;
+  letter-spacing: 2px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 75%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Indexpage-end */
+
+/* List of blogpostspage*/
+
+.listofblogpostsgrid {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.filter {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  color: #07dc82;
+}
+
+.wordpresslistofblogposts {
+  grid-area: blogposts;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 20px;
+}
+
+.wordpresspostsdiv {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-color: rgb(16, 1, 24);
+}
+
+.wordpresspostsdiv a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.wordpresspostsdiv p {
+  max-width: 350px;
+}
+
+.search {
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+
+.search-button {
+  background-color: #07dc82;
+  color: #ffffff;
+  border-style: none;
+  padding: 9px 12px 8px 12px;
+  cursor: pointer;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: bolder;
+}
+
+.search-button:hover {
+  border-radius: 1.5rem;
+}
+
+#search-input {
+  background-color: rgb(16, 1, 24);
+  border-style: none;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  padding-top: 7px;
+  padding-bottom: 6px;
+  width: 350px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.dropdown {
+  background-color: rgb(16, 1, 24);
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  border-style: none;
+  padding: 6px;
+}
+
+.categories {
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+
+.per-page {
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+/* List of blogpostpage-end */
+
+/* Blogpostspecificpage */
+.wordpress-specific-blog-div {
+  display: grid;
+  background-color: rgb(16, 1, 24);
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 25% auto;
+  grid-template-areas:
+    "title title title"
+    "blog blog blog";
+}
+
+.wordpress-specific-post-title {
+  grid-area: title;
+  text-align: center;
+  font-size: 50px;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+.wordpress-specific-content {
+  text-align: center;
+  margin: 0 auto;
+  grid-area: blog;
+  max-width: 600px;
+  color: #ffffff;
+}
+
+.wordpress-specific-content img {
+  width: initial;
+  height: initial;
+  width: 300px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.wordpress-specific-content p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.image-modal {
+  display: none;
+  top: 0;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  text-align: center;
+  padding-top: 13vh;
+}
+
+.modal-image-class {
+  max-width: 400px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+/* Blogpostspecificpage-end */
+
+/* About page */
+.about-me-div {
+  display: grid;
+  align-items: center;
+  margin-left: 140px;
+  margin-right: 140px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "text1 about1"
+    "about2 text2"
+    "text3 about3";
+}
+
+.about-images {
+  max-width: 300px;
+  justify-self: center;
+}
+
+.about-me-div p {
+  max-width: 600px;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+}
+
+#text1 {
+  grid-area: text1;
+}
+#text2 {
+  grid-area: text2;
+}
+#text3 {
+  grid-area: text3;
+}
+
+#about1 {
+  grid-area: about1;
+}
+#about2 {
+  grid-area: about2;
+}
+#about3 {
+  grid-area: about3;
+}
+
+/* About page-end */
+
+#firstpreviousbutton {
+  display: none;
+}
+
+#secondpreviousbutton {
+  display: none;
+}
+
+#morebutton {
+  display: none;
+}
+
+footer {
+  background: rgb(16, 1, 24);
+  position: fixed;
+  bottom: 0;
+  min-height: 6vh;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer a {
+  color: rgb(111, 3, 255);
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 10px;
+  transition: color 2s;
+}
+
+footer a:hover {
+  color: #01ff87;
+}
+
+/* Contact page */
+
+.contact-me-div {
+  margin-left: 200px;
+  margin-right: 200px;
+  padding-bottom: 160px;
+}
+
+.contact-me-div p {
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+.form-error {
+  display: none;
+  color: rgb(238, 76, 70);
+  font-size: 0.9rem;
+  margin-top: 2px;
+}
+
+#returnmessage {
+  padding: 1rem;
+  color: #01ff87;
+  margin-top: 1rem;
+}
+
+#contactForm label {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#contactForm input {
+  width: 70%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(16, 1, 24);
+  color: #ffffff;
+  border-style: none;
+  border: 1px solid #ffffff;
+}
+
+.form-error {
+  text-align: right;
+}
+
+#returnmessage {
+  text-align: right;
+}
+
+.send-message-button {
+  text-align: right;
+}
+
+#contactForm button {
+  padding: 1rem;
+  background-color: #07dc82;
+  color: #ffffff;
+  margin: 1rem;
+  border-style: none;
+  cursor: pointer;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: bolder;
+}
+
+#contactForm button:hover {
+  border-radius: 1.5rem;
+}
+
+#contactForm button:disabled {
+  background: rgb(16, 1, 24);
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  cursor: initial;
+  border-radius: initial;
+}
+
+.your-message-class textarea {
+  height: 120px;
+  width: 70%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: bolder;
+  background-color: rgb(16, 1, 24);
+  border-style: none;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+/* Contact page-end */
+
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  .indexgrid {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .navlist {
+    width: 50%;
+  }
+
+  /*Index page*/
+  .indexgrid {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .indexgrid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .index-class {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .index-images {
+    max-width: 400px;
+    max-height: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .index-class p {
+    max-width: 400px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+  }
+
+  #indexdiv1 {
+    margin-bottom: 0px;
+  }
+
+  .latestposts {
+    margin-bottom: 20px;
+  }
+
+  #indexdiv3 {
+    flex-direction: column;
+  }
+
+  #indexdiv5 {
+    flex-direction: column;
+  }
+
+  /* Index page-end*/
+
+  /* List of blogposts */
+  .listofblogpostsgrid {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .wordpresslistofblogposts {
+    grid-gap: 15px;
+  }
+
+  #search-input {
+    width: 220px;
+  }
+
+  .buttons {
+    width: 100%;
+  }
+
+  /* List of blogposts */
+
+  /*About page*/
+  .about-me-div {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  /*About-page-end*/
+
+  /* Contact page*/
+
+  .contact-me-div {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  /* Contact page-end*/
+}
+
+@media screen and (max-width: 900px) {
+  .navlist {
+    width: 60%;
+  }
+
+  /*Index page*/
+  .heading {
+    font-size: 30px;
+  }
+
+  /* Index page-end*/
+
+  /* List of blogposts */
+  .listofblogpostsgrid {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #search-input {
+    width: 170px;
+  }
+
+  .per-page .dropdown {
+    padding-right: 10px;
+  }
+
+  /* List of blogposts */
+
+  /*About page*/
+  .about-me-div {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .about-me-div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-images {
+    max-width: 400px;
+    justify-self: center;
+  }
+
+  .about-me-div p {
+    max-width: 400px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  /*About-page-end*/
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    margin-bottom: 30px;
+  }
+
+  /*Index page*/
+  .heading {
+    font-size: 25px;
+  }
+
+  .buttons {
+    width: 75%;
+  }
+
+  /* Index page-end*/
+
+  /* List of blogposts */
+  .wordpresslistofblogposts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .listofblogpostsgrid {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .filter {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* List of blogposts */
+
+  /*About page*/
+
+  /*About-page-end*/
+
+  /*Specific blog page*/
+  .modal-image-class {
+    width: 100%;
+  }
+
+  .wordpress-specific-content p {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  /*Specific blog page-end*/
+
+  /* Contact page */
+
+  .contact-me-div {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  #contactForm label {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  #contactForm input {
+    width: 100%;
+  }
+
+  .your-message-class textarea {
+    width: 100%;
+  }
+
+  .send-message-button {
+    text-align: center;
+  }
+
+  #returnmessage {
+    text-align: center;
+  }
+
+  /* Contact page-end */
+
+  footer {
+    flex-direction: column-reverse;
+    position: initial;
+    overflow-x: hidden;
+    margin-top: 20px;
+  }
+
+  footer a {
+    color: #07dc82;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .navlist {
+    width: 100%;
+    height: 89vh;
+    top: 11vh;
+    background-color: rgb(16, 1, 24);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+    transform: translateX(100%);
+    transition: transform 0.7s ease-in;
+  }
+
+  .menuicon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .navlist li {
+    opacity: 0;
+  }
+
+  .navtransform {
+    transform: translateX(0%);
+  }
+
+  @keyframes fadingIn {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  .menuiconchange .one {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .menuiconchange .two {
+    opacity: 0;
+  }
+  .menuiconchange .three {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .about-images {
+    max-width: 275px;
+    justify-self: center;
+  }
+  .about-me-div p {
+    max-width: 275px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .index-images {
+    max-width: 275px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .index-class p {
+    max-width: 275px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+

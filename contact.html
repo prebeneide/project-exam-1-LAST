@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Preben´s - Blog | Contact</title>
+    <meta name="description" content="Contact page" />
+    <meta name="viewport" content="width=device-width, initial scale=1" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+  </style>
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="name">
+            <a href="index.html"><p> blog. </p></a>
+        </div>
+            <ul class="navlist">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="listofblogposts.html" >Blogposts</a></li>
+                <li><a href="about.html" >About</a></li>
+                <li><a href="contact.html" class="active" >Contact</a></li>
+            </ul>
+            <div class="menuicon">
+              <div class="one"></div>
+              <div class="two"></div>
+              <div class="three"></div>
+          </div>
+        </nav>
+        <div class="orientation">
+          <p><a href="index.html">Home</a> &#187; <a href="contact.html">Contact</a></p>
+        </div>
+    </header>
+    <main>
+        <div class="heading">
+          <h1>Contact me</h1>
+        </div>
+        <div class="contact-me-div">
+          <p>If you have any questions or just want to leave a message, I will love to hear from you.</p>
+          <form id="contactForm">
+            <div class="your-name-class">
+              <label>
+                Your Name
+                <input name="name" id="name" placeholder="Name" />
+              </label>
+              <div class="form-error" id="nameError">Please enter your name</div>
+            </div>
+            <div class="your-email-class">
+              <label>
+                Your Email
+                <input name="email" id="email" placeholder="Email" />
+              </label>
+              <div class="form-error" id="emailError">Please enter a valid email adress</div>
+            </div>
+            <div class="subject-class">
+              <label>
+                Subject
+                <input name="subject" id="subject" placeholder="Subject" />
+              </label>
+              <div class="form-error" id="subjectError">Subject must be at least 15 characters</div>
+            </div>
+            <div class="your-message-class">
+              <label>
+                Your Message 
+                <textarea name="yourmessage" id="yourmessage"  placeholder="Message"></textarea>
+              </label>
+              <div class="form-error" id="yourMessageError">Message must have a value of minimum 25 characters</div>
+            </div>
+            <div id="returnmessage"></div>
+            <div class="send-message-button">
+            <button class="send-message-button" disabled>Send message</button>
+            </div>
+          </form>
+        </div>
+    </main>
+    <footer >
+        <a href="about.html" >Made by @prebeneide</a>
+        <a href="contact.html" >Contact</a>
+        <a href="listofblogposts.html" >facebook</a>
+    </footer>
+    <script src="js/showhidenavbar.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
