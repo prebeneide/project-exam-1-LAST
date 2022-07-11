@@ -317,7 +317,7 @@ h2 {
   background-color: #07dc82;
   color: #ffffff;
   border-style: none;
-  padding: 9px 12px 8px 12px;
+  padding: 9px 12px 9px 12px;
   cursor: pointer;
   font-family: "Lexend Deca", sans-serif;
   font-weight: bolder;
@@ -332,8 +332,8 @@ h2 {
   border-style: none;
   border: 1px solid #ffffff;
   color: #ffffff;
-  padding-top: 7px;
-  padding-bottom: 6px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   width: 170px;
   font-family: "Montserrat", sans-serif;
 }
@@ -347,12 +347,12 @@ h2 {
 }
 
 .categories {
-  margin-top: 13px;
+  margin-top: 17px;
   margin-bottom: 13px;
 }
 
 .per-page {
-  margin-top: 13px;
+  margin-top: 17px;
   margin-bottom: 13px;
 }
 /* List of blogpostpage-end */
