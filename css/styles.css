@@ -25,7 +25,8 @@ nav {
 }
 
 main {
-  margin-top: 150px;
+  max-width: 1000px;
+  margin: 150px auto;
 }
 
 h1 {
@@ -133,11 +134,10 @@ h2 {
 }
 
 /* Indexpage */
+
 .indexgrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-left: 100px;
-  margin-right: 100px;
   grid-template-rows: auto auto auto auto auto auto;
   grid-template-areas:
     "index1 latestposts"
@@ -334,7 +334,7 @@ h2 {
   color: #ffffff;
   padding-top: 7px;
   padding-bottom: 6px;
-  width: 350px;
+  width: 170px;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -409,9 +409,18 @@ h2 {
 }
 
 .modal-image-class {
-  max-width: 400px;
-  justify-content: center;
-  margin-top: 50px;
+  width: 50%;
+  margin: auto;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#larger-image-modal {
+  align-self: center;
+  justify-self: center;
+  background-color: #100118cf;
 }
 
 /* Blogpostspecificpage-end */
@@ -420,8 +429,6 @@ h2 {
 .about-me-div {
   display: grid;
   align-items: center;
-  margin-left: 140px;
-  margin-right: 140px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto;
   grid-template-areas:
@@ -594,13 +601,18 @@ footer a:hover {
 /* Contact page-end */
 
 @media only screen and (max-width: 1200px) and (min-width: 1025px) {
-  .indexgrid {
-    margin-left: 50px;
-    margin-right: 50px;
+  main {
+    max-width: 950px;
+    margin: 150px auto;
   }
 }
 
 @media screen and (max-width: 1024px) {
+  main {
+    max-width: 900px;
+    margin: 150px auto;
+  }
+
   .navlist {
     width: 50%;
   }
@@ -665,10 +677,6 @@ footer a:hover {
     grid-gap: 15px;
   }
 
-  #search-input {
-    width: 220px;
-  }
-
   .buttons {
     width: 100%;
   }
@@ -705,14 +713,7 @@ footer a:hover {
   /* Index page-end*/
 
   /* List of blogposts */
-  .listofblogpostsgrid {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
 
-  #search-input {
-    width: 170px;
-  }
 
   .per-page .dropdown {
     padding-right: 10px;
@@ -784,7 +785,7 @@ footer a:hover {
 
   /*Specific blog page*/
   .modal-image-class {
-    width: 100%;
+    width: 90%;
   }
 
   .wordpress-specific-content p {
