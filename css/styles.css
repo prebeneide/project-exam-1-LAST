@@ -387,7 +387,7 @@ h2 {
 .wordpress-specific-content img {
   width: initial;
   height: initial;
-  width: 300px;
+  max-width: 400px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
