@@ -10,7 +10,7 @@ console.log(id);
 
 const baseUrl = "http://wordpress.prebeneide.com/wp-json/wp/v2/posts/";
 
-const corsEnabledUrl = "https://noroffcors.herokuapp.com/" + baseUrl;
+const corsEnabledUrl = "https://cors-anywhere.herokuapp.com/" + baseUrl;
 
 const url = corsEnabledUrl + id;
 
