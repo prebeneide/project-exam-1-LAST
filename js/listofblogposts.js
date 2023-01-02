@@ -2,7 +2,7 @@ const baseUrl = "http://wordpress.prebeneide.com/wp-json/wp/v2/posts";
 const listOfPostsContainer = document.querySelector(".wordpresslistofblogposts");
 const perPage = document.querySelector("#dropdown-per-page");
 const categories = document.querySelector("#dropdown-categories");
-const corsEnabledUrl = "https://cors-anywhere.herokuapp.com/" + baseUrl;
+const corsEnabledUrl = baseUrl;
 const searchButton = document.querySelector(".search-button");
 
 async function getListOfPosts(url){
