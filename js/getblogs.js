@@ -1,6 +1,6 @@
 const baseUrl = "http://wordpress.prebeneide.com/wp-json/wp/v2/posts";
 const wordpressContainer = document.querySelector(".wordpress");
-const corsEnabledUrl = "https://cors-anywhere.herokuapp.com/" + baseUrl + "?per_page=20";
+const corsEnabledUrl = "https://cors.noroff.dev/" + baseUrl + "?per_page=20";
 
 
 async function getFirstPosts(url) {
